@@ -21,7 +21,7 @@ namespace Formular_Creare_Cont
         }
 
         private void upload()
-        {
+        {   
             string[] lines = File.ReadAllLines("users.txt");
             int n = 0;
             foreach (string line in lines)
