@@ -14,25 +14,23 @@ namespace Formular_Creare_Cont
 {
     public partial class Form1 : MaterialSkin.Controls.MaterialForm
     {
-        
-        static List<user> users = new List<user>();
-
-
         public Form1()
         {
             InitializeComponent();
             upload();
-            user.setIndex(0);
         }
 
         private void upload()
         {
             string[] lines = File.ReadAllLines("users.txt");
+            int n = 0;
             foreach (string line in lines)
             {
                 string[] words = line.Split(' ');
-                users.Add(new user(words[0], words[1], words[2], words[3], words[4]));
+                Program.users.Add(new user(words[0], words[1], words[2], words[3], words[4]));
+                n++;   
             }
+            user.setIndex(n);
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -42,6 +40,12 @@ namespace Formular_Creare_Cont
             this.Hide();
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form3 f3 = new Form3();
+            f3.Show();
+            this.Hide();
+        }
         
 
         private void Form1_Load(object sender, EventArgs e)
@@ -55,10 +59,6 @@ namespace Formular_Creare_Cont
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void button3_Click(object sender, EventArgs e)
         {
