@@ -10,14 +10,15 @@ namespace lab5
     static class Program
     {
         public static List<elev> elevi = new List<elev>();
-        public static string info = "";
+        public static string []info = new string[50];
+        public static int i = 0;
         private static void upload()
         {
             StreamReader sr = new StreamReader("elevi.txt");
             string line;
             while ((line = sr.ReadLine()) != null)
             {
-                info = info + "\n" + line ;
+                info[i] = line; i++;
                 string[] s = line.Split(' ');
                 int[] n = new int[4];
                 n[0] = int.Parse(s[4]);

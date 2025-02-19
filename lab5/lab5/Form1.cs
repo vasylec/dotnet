@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Runtime.InteropServices;
 
 namespace lab5
 {
@@ -21,7 +22,11 @@ namespace lab5
 
         void upload()
         {
-            listBox1.Items.Add(Program.info + "\n");
+            for(int i=0;i<Program.info.Length; i++)
+                if (Program.info[i] != null)
+                {
+                    listBox1.Items.Add(Program.info[i]);
+                }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -37,7 +42,7 @@ namespace lab5
             Program.elevi.Add(new elev(textBox1.Text, dateTimePicker1.Value.ToShortDateString(), comboBox5.SelectedIndex + 1, n));
             save();
 
-            Program.info = textBox1.Text + " " + dateTimePicker1.Value.ToShortDateString() + " " + (comboBox5.SelectedIndex + 1) + " " + a + " " + b +  " " + c + " " + d;
+            Program.info[Program.i] = textBox1.Text + " " + dateTimePicker1.Value.ToShortDateString() + " " + (comboBox5.SelectedIndex + 1) + " " + a + " " + b +  " " + c + " " + d;
             upload();
         }
 
