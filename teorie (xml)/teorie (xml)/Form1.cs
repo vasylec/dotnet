@@ -21,6 +21,8 @@ namespace teorie__xml_
 
         private void import_button_Click(object sender, EventArgs e)
         {
+            dataSet.Reset();
+
             OpenFileDialog o = new OpenFileDialog();
             o.Title = "Select XML File";
             o.Filter = "xml files (*.xml)|*.xml";
