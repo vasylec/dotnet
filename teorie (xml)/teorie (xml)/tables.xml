@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Employees>
+  <Employee>
+    <ID>1</ID>
+    <Name>Ion Popescu</Name>
+    <Age>30</Age>
+  </Employee>
+  <Employee>
+    <ID>2</ID>
+    <Name>Maria Ionescu</Name>
+    <Age>25</Age>
+  </Employee>
+  <Employee>
+    <ID>3</ID>
+    <Name>George Vasile</Name>
+    <Age>40</Age>    
+  </Employee>
+</Employees>
