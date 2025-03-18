@@ -22,16 +22,23 @@ namespace lab7
 
         public static void UploadUsers()
         {
-            StreamReader sr = new StreamReader("users.txt");
-            string line;
-            int i = 0;
-            while ((line = sr.ReadLine()) != null)
+            try
             {
-                string[] parts = line.Split(' ');
-                Program.users[i] = new User(parts[0], parts[1], parts[2], parts[3], parts[4]);
-                i++;
+                StreamReader sr = new StreamReader("users.txt");
+                string line;
+                int i = 0;
+                while ((line = sr.ReadLine()) != null)
+                {
+                    string[] parts = line.Split(' ');
+                    Program.users[i] = new User(parts[0], parts[1], parts[2], parts[3], parts[4]);
+                    i++;
+                }
+                sr.Close();
             }
-            sr.Close();
+            catch(Exception e)
+            {
+                MessageBox.Show("Eroare la citirea fisierului");
+            }
         }
 
 
