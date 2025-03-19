@@ -45,5 +45,10 @@ namespace Lucru_Individual_nr._1
         {
 
         }
+
+        private void webView21_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

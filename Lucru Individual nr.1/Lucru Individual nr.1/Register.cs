@@ -26,5 +26,10 @@ namespace Lucru_Individual_nr._1
         {
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -88,6 +88,7 @@
             this.webView21.Size = new System.Drawing.Size(763, 392);
             this.webView21.TabIndex = 17;
             this.webView21.ZoomFactor = 1D;
+            this.webView21.Click += new System.EventHandler(this.webView21_Click);
             // 
             // MainAppContacte
             // 
