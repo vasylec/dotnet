@@ -40,6 +40,7 @@ namespace Lucru_Individual_nr._1
             Register reg = new Register();
             reg.Show();
             this.Hide();
+            //
             reg.FormClosed += (s, args) => this.Show();
         }
         private void textBox1_TextChanged(object sender, EventArgs e)

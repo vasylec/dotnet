@@ -40,9 +40,10 @@
             // 
             this.button9.BackColor = System.Drawing.Color.Transparent;
             this.button9.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(6, 29);
+            this.button9.Location = new System.Drawing.Point(8, 36);
+            this.button9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(124, 29);
+            this.button9.Size = new System.Drawing.Size(165, 36);
             this.button9.TabIndex = 12;
             this.button9.Text = "Pagina principala";
             this.button9.UseVisualStyleBackColor = false;
@@ -52,9 +53,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Nirmala UI", 16F);
-            this.label1.Location = new System.Drawing.Point(15, 79);
+            this.label1.Location = new System.Drawing.Point(20, 97);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(390, 30);
+            this.label1.Size = new System.Drawing.Size(485, 37);
             this.label1.TabIndex = 13;
             this.label1.Text = "Adresa - Or. Chișinău, str. Columna 170";
             // 
@@ -62,9 +64,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Nirmala UI", 16F);
-            this.label2.Location = new System.Drawing.Point(15, 109);
+            this.label2.Location = new System.Drawing.Point(20, 134);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(371, 30);
+            this.label2.Size = new System.Drawing.Size(459, 37);
             this.label2.TabIndex = 14;
             this.label2.Text = "Număr de telefon - +373-0000-0000";
             // 
@@ -72,9 +75,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Nirmala UI", 16F);
-            this.label3.Location = new System.Drawing.Point(15, 139);
+            this.label3.Location = new System.Drawing.Point(20, 171);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(374, 30);
+            this.label3.Size = new System.Drawing.Size(459, 37);
             this.label3.TabIndex = 15;
             this.label3.Text = "Program de lucru - L-D: 09:00 - 20:00";
             // 
@@ -83,24 +87,27 @@
             this.webView21.AllowExternalDrop = true;
             this.webView21.CreationProperties = null;
             this.webView21.DefaultBackgroundColor = System.Drawing.Color.White;
-            this.webView21.Location = new System.Drawing.Point(20, 172);
+            this.webView21.Location = new System.Drawing.Point(27, 212);
+            this.webView21.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.webView21.Name = "webView21";
-            this.webView21.Size = new System.Drawing.Size(763, 392);
+            this.webView21.Size = new System.Drawing.Size(1017, 482);
             this.webView21.TabIndex = 17;
             this.webView21.ZoomFactor = 1D;
             this.webView21.Click += new System.EventHandler(this.webView21_Click);
             // 
             // MainAppContacte
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(802, 584);
+            this.ClientSize = new System.Drawing.Size(1069, 719);
             this.Controls.Add(this.webView21);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button9);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MainAppContacte";
+            this.Padding = new System.Windows.Forms.Padding(4, 79, 4, 4);
             this.Load += new System.EventHandler(this.MainAppContacte_Load);
             ((System.ComponentModel.ISupportInitialize)(this.webView21)).EndInit();
             this.ResumeLayout(false);
