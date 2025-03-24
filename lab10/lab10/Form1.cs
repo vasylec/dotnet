@@ -21,21 +21,25 @@ namespace lab10
         private void button1_Click(object sender, EventArgs e)
         {
             webBrowser1.Navigate(textBox1.Text);
+            this.webBrowser1.ScriptErrorsSuppressed = true;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             webBrowser1.GoForward();
+            this.webBrowser1.ScriptErrorsSuppressed = true;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            webBrowser1.GoBack();   
+            webBrowser1.GoBack();
+            this.webBrowser1.ScriptErrorsSuppressed = true;
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             webBrowser1.Navigate("www.google.com");
+            this.webBrowser1.ScriptErrorsSuppressed = true;
         }
 
     }
