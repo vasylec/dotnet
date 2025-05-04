@@ -67,6 +67,12 @@
     <Compile Include="AdminApp.Designer.cs">
       <DependentUpon>AdminApp.cs</DependentUpon>
     </Compile>
+    <Compile Include="Conectare.cs" />
+    <Compile Include="db_ultraDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_ultraDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +111,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="quantity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="quantity.Designer.cs">
+      <DependentUpon>quantity.cs</DependentUpon>
+    </Compile>
     <Compile Include="Register.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,9 +154,23 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="quantity.resx">
+      <DependentUpon>quantity.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="db_ultraDataSet.xsc">
+      <DependentUpon>db_ultraDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="db_ultraDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_ultraDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_ultraDataSet.xss">
+      <DependentUpon>db_ultraDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
